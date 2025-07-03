@@ -98,7 +98,7 @@ body {
   padding: 15px;
   border-radius: 10px;
   border: 2px solid #e0e4e7;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.5;
   word-wrap: break-word;
   color: #555;
@@ -168,6 +168,48 @@ body {
   .btn {
     padding: 12px 25px;
     font-size: 14px;
+  }
+}
+
+/* testing================ */
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  width: 100%;
+  max-width: 400px;
+  padding: 10px 14px;
+  font-size: 11px;
+  font-family: sans-serif;
+  display: block;
+  margin: 0 auto; /* ⬅️ Pusatkan elemen select */
+  text-align: center; /* ini hanya untuk placeholder kadang berhasil */
+  text-align-last: center; /* ini hanya berlaku di Firefox */
+}
+
+select:focus {
+  border-color: #a8eb12; /* Biru modern */
+  outline: none; /* ✅ Hilangkan garis luar ungu */
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3); /* Biru lembut */
+}
+
+/* Styling khusus untuk <option> */
+#qr-result option {
+  background-color: #f1f3f4;
+  color: #000102;
+  padding: 10px;
+  font-size: 11px;
+}
+@media (max-width: 480px) {
+  #qr-result option {
+    padding: 8px;
+    font-size: 11px;
+  }
+
+  select {
+    width: 100%;
+    font-size: 11px;
   }
 }
 
